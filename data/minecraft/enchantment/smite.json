@@ -62,7 +62,7 @@
                 "affected": "victim",
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "etweaks:unbaby"
+                    "function": "etweaks:smite/unbaby"
                 },
                 "requirements": [
                     {
