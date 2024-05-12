@@ -1,0 +1,97 @@
+{
+    "description": {
+        "translate": "enchantment.minecraft.smite"
+    },
+    "exclusive_set": "#minecraft:exclusive_set/damage",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "primary_items": "#minecraft:enchantable/sword",
+    "weight": 5,
+    "max_level": 5,
+    "min_cost": {
+        "base": 5,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 25,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 2,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 2.5,
+                        "per_level_above_first": 2.5
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type": "#minecraft:sensitive_to_smite"
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 0.4,
+                        "per_level_above_first": 0.4
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type": "#etweaks:not_sensitive_to_smite"
+                    }
+                }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+                "enchanted": "attacker",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "etweaks:unbaby"
+                },
+                "requirements": [
+                    {
+                        "condition": "minecraft:damage_source_properties",
+                        "predicate": {
+                            "is_direct": true
+                        }
+                    },
+                    {
+                        "condition": "minecraft:random_chance_with_enchanted_bonus",
+                        "enchantment": "minecraft:smite",
+                        "chance": {
+                            "type": "minecraft:linear",
+                            "base": 0.2,
+                            "per_level_above_first": 0.2
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "#minecraft:zombies",
+                            "flags": {
+                                "is_baby": true
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "pack": {
+        "pack_format": 43,
+        "description": "Small tweaks and additions to Vanilla enchantments",
+        "supported_versions": [
+            43
+        ]
+    }
+}
