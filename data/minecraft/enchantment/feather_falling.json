@@ -45,6 +45,6 @@
         "body"
     ],
     "supported_items": "#etweaks:enchantable/foot_and_animal",
-    "primary_items": "##etweaks:enchantable/foot_and_animal",
+    "primary_items": "#etweaks:enchantable/foot_and_animal",
     "weight": 5
 }

@@ -31,6 +31,6 @@
         "body"
     ],
     "supported_items": "#etweaks:enchantable/head_and_animal",
-    "primary_items": "##etweaks:enchantable/head_and_animal",
+    "primary_items": "#etweaks:enchantable/head_and_animal",
     "weight": 2
 }
