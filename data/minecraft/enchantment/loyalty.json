@@ -34,7 +34,7 @@
             {
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "etweaks:loyalty/fling_loot"
+                    "function": "catter:loyalty/fling_loot"
                 }
             }
         ],
@@ -44,7 +44,7 @@
                 "affected": "damaging_entity",
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "etweaks:loyalty/fling_loot"
+                    "function": "catter:loyalty/fling_loot"
                 }
             }
         ]

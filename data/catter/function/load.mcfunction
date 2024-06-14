@@ -12,4 +12,4 @@ scoreboard objectives add motion.z dummy
 
 scoreboard objectives add level dummy
 
-data modify storage etweaks:loyalty Motion set value [0.0, 0.0, 0.0]
+data modify storage catter:loyalty Motion set value [0.0, 0.0, 0.0]

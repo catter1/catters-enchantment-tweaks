@@ -101,7 +101,7 @@
     "slots": [
         "body"
     ],
-    "supported_items": "#etweaks:enchantable/foot_and_animal",
-    "primary_items": "#etweaks:enchantable/foot_and_animal",
+    "supported_items": "#catter:enchantable/foot_and_animal",
+    "primary_items": "#catter:enchantable/foot_and_animal",
     "weight": 2
 }

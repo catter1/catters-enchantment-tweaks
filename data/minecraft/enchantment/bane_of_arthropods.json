@@ -51,7 +51,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                        "type": "#etweaks:not_sensitive_to_bane_of_arthropods"
+                        "type": "#catter:not_sensitive_to_bane_of_arthropods"
                     }
                 }
             }

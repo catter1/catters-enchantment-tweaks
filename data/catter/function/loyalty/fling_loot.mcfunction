@@ -56,9 +56,9 @@ scoreboard players operation %constant level *= @s level
 scoreboard players operation @s motion.y += %constant level
 
 # Merge motion vectors into storage with correct counter-multiples for floating point divison
-execute store result storage etweaks:loyalty Motion[0] double 0.0005 run scoreboard players get @s motion.x
-execute store result storage etweaks:loyalty Motion[1] double 0.0005 run scoreboard players get @s motion.y
-execute store result storage etweaks:loyalty Motion[2] double 0.0005 run scoreboard players get @s motion.z
+execute store result storage catter:loyalty Motion[0] double 0.0005 run scoreboard players get @s motion.x
+execute store result storage catter:loyalty Motion[1] double 0.0005 run scoreboard players get @s motion.y
+execute store result storage catter:loyalty Motion[2] double 0.0005 run scoreboard players get @s motion.z
 
 # Merge storage to actual item Motion
-execute as @e[type=item,distance=..2.5] run data modify entity @s Motion set from storage etweaks:loyalty Motion
+execute as @e[type=item,distance=..2.5] run data modify entity @s Motion set from storage catter:loyalty Motion

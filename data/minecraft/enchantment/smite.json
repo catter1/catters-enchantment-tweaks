@@ -51,7 +51,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                        "type": "#etweaks:not_sensitive_to_smite"
+                        "type": "#catter:not_sensitive_to_smite"
                     }
                 }
             }
@@ -62,7 +62,7 @@
                 "affected": "victim",
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "etweaks:smite/unbaby"
+                    "function": "catter:smite/unbaby"
                 },
                 "requirements": [
                     {

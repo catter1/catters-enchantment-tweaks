@@ -49,7 +49,7 @@
     "slots": [
         "any"
     ],
-    "supported_items": "#etweaks:enchantable/armor_and_animal",
-    "primary_items": "#etweaks:enchantable/armor_and_animal",
+    "supported_items": "#catter:enchantable/armor_and_animal",
+    "primary_items": "#catter:enchantable/armor_and_animal",
     "weight": 1
 }
